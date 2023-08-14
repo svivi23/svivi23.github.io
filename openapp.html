@@ -6,8 +6,8 @@
 			<script>
 window.onload = function() {
 // 设置倒计时时间和应用调用的超时时间（以毫秒为单位）
-var countdownTime = 10000; // 10秒
-var appTimeout = 3000; // 3秒
+var countdownTime = 1000; // 10秒
+var appTimeout = 800; // 3秒
 
         // 开始倒计时
         setTimeout(function() {
@@ -18,7 +18,7 @@ var appTimeout = 3000; // 3秒
             setTimeout(function() {
                 if (!appCall || appCall.closed || appCall.closed === undefined) {
                     // 应用没有响应，跳转到另一个网址
-                    window.location.href = "https://example.com/redirect-url";
+                    window.location.href = "https://onelink.to/ff5t9p";
                 } else {
                     // 应用有响应，关闭新打开的窗口
                     appCall.close();
