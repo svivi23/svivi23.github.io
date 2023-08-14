@@ -4,11 +4,29 @@
 <meta charset="UTF-8">
 <title>Untitled Document</title>
 			<script>
-	 
-  window.onload = function(){
-	  window.location.href="lotteryTW://";
-  }
-	</script>
+window.onload = function() {
+// 设置倒计时时间和应用调用的超时时间（以毫秒为单位）
+var countdownTime = 10000; // 10秒
+var appTimeout = 3000; // 3秒
+
+        // 开始倒计时
+        setTimeout(function() {
+            // 尝试调用app
+            var appCall = window.open("app://"); // 替换为您的应用的自定义 URL Scheme
+
+            // 设置超时，如果应用没有响应，将会发生跳转
+            setTimeout(function() {
+                if (!appCall || appCall.closed || appCall.closed === undefined) {
+                    // 应用没有响应，跳转到另一个网址
+                    window.location.href = "https://example.com/redirect-url";
+                } else {
+                    // 应用有响应，关闭新打开的窗口
+                    appCall.close();
+                }
+            }, appTimeout);
+        }, countdownTime);
+    };
+</script>
 </head>
 
 <body>
