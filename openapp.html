@@ -1,31 +1,31 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Untitled Document</title>
-			<script>
-window.onload = function() {
-	window.open("lotteryTW://"); // 替换为您的应用的自定义 URL Scheme
-	
-// 设置倒计时时间和应用调用的超时时间（以毫秒为单位）
-// var countdownTime = 10000; // 10秒
-var appTimeout = 3000; // 3秒
+<script>
+// 呼叫APP Scheme
+function callAppScheme() {
+  // 修改成你想要的APP Scheme
+  var appScheme = "lotteryTW://";
 
-       // 设置超时，如果应用没有响应，将会发生跳转
-            setTimeout(function() {
-                if (!appCall || appCall.closed || appCall.closed === undefined) {
-                    // 应用没有响应，跳转到另一个网址
-                    window.location.href = "https://onelink.to/ff5t9p";
-                } else {
-                    // 应用有响应，关闭新打开的窗口
-                    appCall.close();
-                }
-            }, appTimeout);
-    };
+  // 嘗試呼叫APP Scheme
+  window.location.href = appScheme;
+
+  // 設定倒數計時3秒
+  setTimeout(function() {
+    // 如果在3秒內未啟動APP，轉跳到指定網址
+    window.location.href = "https://onelink.to/ff5t9p";
+  }, 3000);
+}
 </script>
 </head>
-
-<body>
+<body onload="callAppScheme()">
+<!-- 這裡可以放一些內容，當頁面載入時會呼叫callAppScheme()函數 -->
 	<p>https://onelink.to/ff5t9p</p>
 </body>
 </html>
+
+
+
+
+
+
