@@ -1,0 +1,44 @@
+@charset "utf-8";
+/* CSS Document */
+body
+{
+    margin: 0;
+    padding: 0;
+    background-color: #FFFF99; 
+    font-family: 微軟正黑體, "Microsoft JhengHei" , "Arial" , "Helvetica" , "sans-serif";
+}
+.navbar{
+    border: 2px solid #ED7002;
+    background: #F59143;
+    margin-bottom: 10px;
+}
+.navbar a{
+    color: #660000;
+    font-weight: bold;
+}
+.VideoBox {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+}
+
+.VideoBox iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.VideoImg{
+	width: 100%;
+	height: auto;
+}
+/* 
+標題外框  #ed7002
+標題  #f59143
+內文  #fff7b2
+字體  #CC0000
+背景  #ffff99
+*/
