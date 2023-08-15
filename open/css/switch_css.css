@@ -1,0 +1,136 @@
+  /*按鈕樣式 開始*/
+
+  .switch {
+    /*==設定開關鈕的長寬==*/
+    position: relative;
+    width: 155px;
+    height: 30px;
+    line-height: 30px;
+    margin: 0px auto;
+    border: #007979 solid 2px;
+    border-radius: 20px;
+}
+
+.switch-checkbox {
+    position: absolute;
+    display: none;
+}
+
+.switch-label {
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 20px;
+    background: #ffffff;
+}
+
+.switch-txt {
+    display: block;
+    width: 200%;
+    margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+    
+}
+
+.switch-txt::before,
+.switch-txt::after {
+    display: block;
+    float: right;
+    width: 50%;
+    font-size: 8px;
+    color: #fff;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+
+/*==開關鈕底色(開啟時)==*/
+.switch-txt::after {
+    content: attr(turnOn);
+    padding-left: 10px;
+    color: #007979;
+}
+
+/*開關鈕底色(關閉時)*/
+.switch-txt::before {
+    content: attr(turnOff);
+    padding-right: 10px;
+    color: #007979;
+    text-align: right;
+
+}
+
+/*==開關鈕的顏色與大小==*/
+.switch-Round-btn {
+    text-align: center;
+    font-size:8px;
+    line-height: 26px;
+    color: #ffffff;
+    position: absolute;
+    display: block;
+    width: 76px;
+    height: 26px;
+    margin: 2px;
+    background: #007979;
+    top: 0;
+    bottom: 0;
+    right: 75px;
+    border-radius: 13px;
+    transition: all 0.3s ease-in 0s;
+
+}
+
+
+.switch-Round-btn::after {
+    content: attr(turnOn);
+
+}
+
+
+
+.switch-checkbox:checked+.switch-label .switch-txt {
+    margin-left: -27%;
+}
+
+.switch-checkbox:checked+.switch-label .switch-Round-btn {
+    right: 0;
+
+}
+
+.switch-checkbox:checked+.switch-label .switch-Round-btn::after {
+    content: attr(turnOff);
+
+}
+
+.switch-checkbox:checked+.switch-label .switch-txt::after {
+    left: 0;
+}
+
+
+/*按鈕樣式 結束*/
+
+
+/*顏色控制*/
+
+.table_style1 .switch {
+    border: rgb(36, 160, 154) solid 2px;
+}
+
+.table_style1 .switch-txt::after, .table_style1 .switch-txt::before {
+    color:rgb(36, 160, 154);
+}
+
+.table_style1 .switch-Round-btn {
+    background:rgb(36, 160, 154);
+}
+
+.table_style2 .switch {
+    border:rgb(21, 112, 161) solid 2px;
+}
+
+.table_style2 .switch-txt::after, .table_style2 .switch-txt::before {
+    color:rgb(21, 112, 161);
+}
+
+.table_style2 .switch-Round-btn {
+    background:rgb(21, 112, 161);
+}

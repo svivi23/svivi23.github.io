@@ -1,0 +1,433 @@
+  /*RWD 上方表格 開始*/
+  .number {
+      margin: 50px 15px 0px 15px;
+      text-align: center;
+      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+
+  }
+
+  .table_top {
+      border-collapse: collapse;
+      width: 100%;
+      background-color: rgb(255, 255, 255);
+      /* border: solid 3px #ff9933; */
+      border:  rgb(36, 160, 154) 3px solid;
+  }
+
+  .table_top td,
+  .table_top th {
+      text-align: center;
+      padding: 8px;
+      /* border: solid 2px #e3e3e3; */
+  }
+
+  .table_top td {
+      height: 65px;
+  }
+
+  /*  thead th color
+------------------------------- */
+
+  .table_top thead th {
+      color: #ffffff;
+      font-weight: 600;
+      background: rgb(36, 160, 154);
+
+      /* 指定第一個和預設的標題顏色 */
+  }
+
+
+  /*  table ul
+------------------------------- */
+
+  .table_top ul {
+      width: auto;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+  }
+
+  .table_top ul li {
+      display: inline-block;
+      font-size: 1.2rem;
+  }
+
+
+
+  /*  Responsive
+------------------------------- */
+
+  @media (max-width: 767px) {
+      .number {
+          margin: 30px 15px 0px 15px;
+          width: 94%;
+          box-sizing: border-box;
+          -webkit-box-sizing: border-box;
+      }
+
+      .table_top thead {
+          display: none;
+      }
+
+      .table_top td {
+          display: block;
+          /* 一定要下！ */
+          padding: 0;
+          box-sizing: border-box;
+          -webkit-box-sizing: border-box;
+          font-size: 1rem;
+          text-align: center;
+          width: 50%;
+          float: left;
+          height: 80px;
+      }
+
+      .table_top td::before {
+          content: attr(data-title);
+          width: 100%;
+          font-weight: 500;
+          padding: 6px 0;
+          color: #ffffff;
+          background:  rgb(36, 160, 154);
+          float: left;
+          text-align: center;
+          margin-bottom: 10px;
+          font-weight: 600;
+      }
+
+      .table_top td:nth-child(3) {
+          width: 100%;
+          height: 90px;
+      }
+
+      .table_top td:nth-child(4) {
+          width: 83%;
+          height: 100px;
+      }
+
+      .table_top td:nth-child(5) {
+          width: 17%;
+          height: 100px;
+      }
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /*RWD 下方表格 開始*/
+
+  .table2-c {
+      margin: 0px 15px 0px 15px;
+      text-align: center;
+      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+  }
+
+
+  .table {
+      border-collapse: collapse;
+      width: 100%;
+      background-color: rgb(255, 255, 255);
+      /* border: solid 3px #ff9933; */
+      border:  rgb(36, 160, 154) 3px solid;
+  }
+
+  .table td,
+  .table th {
+      text-align: center;
+      padding: 8px;
+      /* border: solid 2px #e3e3e3; */
+  }
+
+  .table td {
+      font-size: 1.5rem;
+  }
+
+  /*  thead th color
+    ------------------------------- */
+
+  .table thead th {
+      color: #ffffff;
+      font-weight: 600;
+      background: rgb(36, 160, 154);
+      /* 指定第一個和預設的標題顏色 */
+  }
+
+
+  /*  table ul
+    ------------------------------- */
+
+  .table ul {
+      padding: 3px 0;
+      margin: 0;
+      text-align: left;
+  }
+
+  .table ul li {
+      padding: 5px 0;
+      position: relative;
+      list-style-type: none;
+      text-align: center;
+  }
+
+  /*獎金區 結束 (電腦手機版共用)*/
+
+
+  @media (max-width: 767px) {
+      .table2-c {
+          margin: 0px 15px 0px 15px;
+          width: 94%;
+          box-sizing: border-box;
+          -webkit-box-sizing: border-box;
+      }
+
+      .table thead {
+          display: none;
+      }
+
+      .table td {
+          display: block;
+          /* 一定要下！ */
+          padding: 0;
+          box-sizing: border-box;
+          -webkit-box-sizing: border-box;
+          font-size: 1.2rem;
+          text-align: center;
+          width: 33.3%;
+          float: left;
+          height: 80px;
+          font-weight: bolder;
+          
+      }
+
+      .table td::before {
+        content: attr(data-title);
+        width: 100%;
+        font-weight: 500;
+        padding: 6px 0;
+        color: #ffffff;
+        background: rgb(36, 160, 154);
+        float: left;
+        text-align: center;
+        margin-bottom: 10px;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+  }
+
+  /*獎金區 開始 (電腦手機版共用)*/
+
+
+
+
+
+  /*RWD 下方表格 開始*/
+
+
+  .table2 {
+      border-collapse: collapse;
+      width: 100%;
+      background-color: rgb(255, 255, 255);
+      /* border: solid 3px #ff9933; */
+      font-size: 1rem;
+      border:  rgb(36, 160, 154) 3px solid;
+  }
+
+  .table2 td,
+  .table2 th {
+      text-align: center;
+      /* border: solid 2px #e3e3e3; */
+      width: 11%;
+
+     
+  }
+  .table2 th {
+    color: #ffffff;
+    background: rgb(36, 160, 154);
+    font-size: 1rem;
+}
+.table2 td:nth-child(odd) {background: rgb(36, 160, 154,0.2);}
+.table2 td:nth-child(1),
+.table2 th:nth-child(1) {
+    width: 12%;
+}
+
+.table2 td:nth-child(1) {
+    background: rgb(36, 160, 154);
+    color: #ffffff;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+  /*  table ul
+------------------------------- */
+
+  .table2 ul {
+      padding: 3px 0px;
+      margin: 0;
+      text-align: left;
+
+
+  }
+
+  .table2 ul li {
+      padding: 5px 0px;
+      position: relative;
+      list-style-type: none;
+      text-align: center;
+        height: auto;
+    line-height: 30px;
+    padding: 0;
+    font-size:0.9rem;
+    font-weight: 600;
+
+  }
+
+
+
+
+  /*  Responsive
+------------------------------- */
+
+@media (max-width: 980px) {
+    .table2 ul li{
+    font-size: 0.6rem;
+}
+
+
+}
+
+  @media (max-width: 767px) {
+
+
+
+
+      .table2 thead {
+          display: none;
+      }
+
+      .table2 td {
+          display: block;
+          /* 一定要下！ */
+          padding: 0;
+          border: none;
+          padding-bottom: 5px;
+          width: 50%;
+          float: left;
+
+      }
+
+      .table2 td::before {
+          content: attr(data-title)attr(data-content);
+          /* 顯示 data-title */
+          display: inline-block;
+          width: 100%;
+          font-weight: 800;
+          padding: 6px 0;
+          color: #ffffff;
+          background:  rgb(36, 160, 154);
+          font-size: 1rem;
+          /* 指定第一個和預設的標題顏色 */
+      }
+
+      .table2 td:nth-child(1) {
+          display: none;
+      }
+
+
+      .table2 li::before {
+          width: 46%;
+          content: attr(data-content);
+          color: #3e3e3e;
+          text-align: right;
+          float: left;
+          font-size: 0.7rem;
+          line-height: 1.8rem;
+          /*顯示獎金分配項目欄li data-content文字*/
+      }
+
+      .table2 ul li {
+          font-weight: 600;
+          font-size: 0.7rem;
+          line-height: 2rem;
+      }
+
+
+  }
+
+  /*RWD 表格 結束*/
+
+
+
+
+
+
+  /*表格顏色*/
+
+ .table_style1 .table_top, .table_style1 .table, .table_style1 .table2{
+    border:  rgb(36, 160, 154) 3px solid;
+}
+
+.table_style2 .table_top, .table_style2 .table, .table_style2 .table2 {
+    border:   rgb(21, 112, 161) 3px solid;
+}
+
+.table_style1 .table2 td:nth-child(odd) {background: rgb(36, 160, 154,0.2);}
+ .table_style1 .table2_title, .table_style1 .table_top thead th, .table_style1 .table thead th, .table_style1 .table2 th, .table_style1 .table2 td:nth-child(1)  {
+    background: rgb(36, 160, 154);
+}
+.table_style2 .table2 td:nth-child(odd) {background: rgba(21, 112, 161, 0.2);}
+.table_style2 .table2_title, .table_style2 .table_top thead th, .table_style2 .table thead th, .table_style2 .table2 th, .table_style2 .table2 td:nth-child(1)  {
+    background: rgb(21, 112, 161);
+}
+
+
+
+@media (max-width: 767px) {
+    .table_style1 .table_top td::before, .table_style1 .table td::before,.table_style1 .table2 td::before {
+    background: rgb(36, 160, 154);
+}
+    .table_style2 .table_top td::before, .table_style2 .table td::before,.table_style2 .table2 td::before {
+        background: rgb(21, 112, 161);
+    }
+    .table_style1 .table2 li:nth-child(even) {
+        background: rgb(36, 160, 154,0.2);
+    }
+    .table_style2 .table2 li:nth-child(even) {
+        background: rgba(21, 112, 161, 0.2);
+    }
+    .table_style1 .table2 td:nth-child(odd),    .table_style2 .table2 td:nth-child(odd)  {background: none;}
+
+
+}
